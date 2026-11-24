@@ -28,4 +28,4 @@ These are workflow and output-integrity checks. They do not establish the accura
 
 ## Publication check
 
-The tracked files were reviewed for supplied datasets, derived geographic data, private account links, machine-specific paths and credentials. None is included. The GitHub Actions workflow runs the synthetic checks only; it cannot run ArcPy on the hosted Ubuntu runner.
+The initial code release was reviewed for supplied datasets, derived geographic data, private account links, machine-specific paths and credentials. The README was subsequently updated to include an attributed static PNG preview of the dissolved-oxygen map, without adding the underlying spatial datasets. Private account links, machine-specific paths and credentials remain excluded. The GitHub Actions workflow runs the synthetic checks only; it cannot run ArcPy on the hosted Ubuntu runner.

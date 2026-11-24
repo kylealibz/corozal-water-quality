@@ -5,9 +5,27 @@
 
 This University of Belize GIS coursework project explores how dissolved-oxygen observations can be filtered, combined at repeated sampling locations, and interpolated into a continuous map. The task was to isolate June 2014 and show the estimated values within the bay boundary supplied with the `Corozal_WaterQuality` project.
 
-The completed local project contains an ArcGIS Pro map, a PDF layout, a raster surface, and an ArcGIS Online viewing copy. This repository shares the processing code and methods behind those outputs. The supplied datasets and data-bearing project files remain outside the public repository.
+The completed local project contains an ArcGIS Pro map, a PDF layout, a raster surface, and an ArcGIS Online viewing copy. This repository shares the processing code, methods and static map previews. The supplied datasets and editable data-bearing project files remain outside the public repository.
 
-![Workflow from date filtering through station means, IDW interpolation and a masked map layout](figures/workflow.svg)
+## Analysis output
+
+The map below is the product of the June 2014 dissolved-oxygen analysis using the data provided for the coursework. It shows the interpolated values within the supplied bay boundary, together with sampling locations, a legend and a scale bar.
+
+![Completed June 2014 dissolved-oxygen map layout with sampling locations, classified values and a scale bar](figures/corozal_june2014_map.png)
+
+*Map layout: Kyle Ali. Source: supplied WaterQuality coursework project and shapefiles. This is a static portfolio preview; it is not an independently validated monitoring product. The supplied dataset's geographic provenance is discussed below.*
+
+## Workflow
+
+```mermaid
+flowchart TD
+    A[Supplied water-quality observations] --> B[Select June 2014 records]
+    B --> C[Average repeated observations at identical locations]
+    C --> D[IDW interpolation: power 2, 12 nearest locations]
+    D --> E[100 m raster cells]
+    E --> F[Restrict surface to the supplied bay boundary]
+    F --> G[Map layout and PDF export]
+```
 
 ## What the workflow does
 
@@ -63,11 +81,11 @@ python -m unittest discover -s tests -v
 ```text
 scripts/   monthly filtering, station aggregation, ArcPy interpolation and layout
 docs/      methods, data provenance and local archive inventory
-figures/   workflow illustration without supplied geographic data
+figures/   static previews of the completed coursework map layouts
 tests/     synthetic date-boundary, invalid-value and repeat-location checks
 ```
 
-The original `.aprx`, `.ppkx`, geodatabase, map images and PDF are preserved locally. Their selected filenames and hashes are recorded in the [local archive inventory](docs/local_archive_inventory.json). See [data sources and reuse](docs/data_sources.md) for why they are not distributed here.
+The original `.aprx`, `.ppkx`, geodatabase and PDF files are preserved locally. Their selected filenames and hashes are recorded in the [local archive inventory](docs/local_archive_inventory.json). Only static previews are included here; see [data sources and reuse](docs/data_sources.md) for their scope and attribution.
 
 ## Author
 

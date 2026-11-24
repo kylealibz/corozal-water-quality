@@ -17,15 +17,19 @@ No claim is made here that the original monitoring locations, dates, measurement
 
 ## Public-repository scope
 
-This repository includes original processing code, a workflow illustration, documentation, selected numerical summaries and synthetic test cases. It does **not** distribute:
+This repository includes original processing code, a GitHub-rendered workflow, documentation, selected numerical summaries, synthetic test cases and static map previews. It does **not** distribute:
 
 - Original or filtered sampling records and station coordinates.
 - Shapefiles, file geodatabases, raster surfaces or derived GeoJSON polygons.
 - The supplied project package, symbology, task files or teaching instructions.
-- The data-bearing ArcGIS project, static map image or PDF map.
+- Editable data-bearing ArcGIS projects or PDF map files.
 - Local computer paths, account identifiers, credentials or private ArcGIS item links.
 
-The local maps are portfolio outputs, but they still depict supplied geographic data. They remain local while reuse permission and source attribution are unresolved. If permission is later obtained, review its coverage of both the measurements and boundary before adding any data-bearing output to the public repository.
+The README's PNG preview shows the completed dissolved-oxygen coursework product using the supplied data, with a source caption. No separate flood-analysis artifact is included in this water-quality repository.
+
+This rendered preview does not establish permission to redistribute the underlying datasets. Its inclusion does not resolve the mixed metadata described above, or grant a new licence to the geographic content. The repository's MIT licence does not cover third-party data depicted in the preview. Do not extract, repackage or treat the map as independently verified monitoring data.
+
+The earlier standalone workflow illustration is retained in `docs/workflow-illustration.svg` as a documentation asset. It is no longer used as the README banner.
 
 ## Software and code
 
