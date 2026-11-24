@@ -1,0 +1,29 @@
+{
+  "note": "Selected local archive inventory. Filenames and hashes only; no machine paths or source data.",
+  "files": [
+    {
+      "filename": "Corozal_Bay_June2014.aprx",
+      "bytes": 32773,
+      "sha256": "8707330c8badcb23800948dbd9d0b49fe62add28337aca66df21c0172746dbfe",
+      "distribution": "local only; not included in public repository"
+    },
+    {
+      "filename": "Corozal_Bay_June2014.pdf",
+      "bytes": 540864,
+      "sha256": "19f7561cfd3fb4df6f96fcd0d88ece70b11f99cd954d2d814839a0f4f5ff3868",
+      "distribution": "local only; not included in public repository"
+    },
+    {
+      "filename": "Corozal_Bay_June2014.png",
+      "bytes": 167605,
+      "sha256": "630c96aacd56a4781de8935327f33c94229a6f284afa4bc9b06f3011f4708d25",
+      "distribution": "local only; not included in public repository"
+    },
+    {
+      "filename": "Corozal_WaterQuality.ppkx",
+      "bytes": 188826,
+      "sha256": "16e5767d600102cc55c86271aca2761e0217800f1484eb9ec189a224ddacb6d1",
+      "distribution": "supplied teaching package; not included"
+    }
+  ]
+}

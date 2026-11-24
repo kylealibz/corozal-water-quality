@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+<title id="title">June 2014 dissolved-oxygen mapping workflow</title>
+<desc id="desc">Date selection, repeated-location means, IDW interpolation and bay-only cartography. This is a process illustration and contains no supplied geographic data.</desc>
+<rect width="1200" height="320" rx="18" fill="#edf6f6"/>
+<text x="40" y="53" font-family="Arial,sans-serif" font-size="24" font-weight="bold" fill="#163a47">FROM OBSERVATIONS TO A BAY-ONLY MAP</text>
+<text x="40" y="83" font-family="Arial,sans-serif" font-size="16" fill="#38606a">June 2014 · Dissolved oxygen · ArcGIS Pro + Python</text>
+<g fill="white" stroke="#7fa7ae" stroke-width="1.5">
+<rect x="40" y="120" width="250" height="126" rx="10"/><rect x="330" y="120" width="250" height="126" rx="10"/>
+<rect x="620" y="120" width="250" height="126" rx="10"/><rect x="910" y="120" width="250" height="126" rx="10"/>
+</g>
+<g font-family="Arial,sans-serif" fill="#163a47">
+<text x="60" y="154" font-size="18" font-weight="bold">01  SELECT THE MONTH</text>
+<text x="60" y="187" font-size="16">1 June ≤ date &lt; 1 July</text><text x="60" y="215" font-size="16">170 records in the local run</text>
+<text x="350" y="154" font-size="18" font-weight="bold">02  COMBINE LOCATIONS</text>
+<text x="350" y="187" font-size="16">Mean at identical x/y pairs</text><text x="350" y="215" font-size="16">114 locations; all depths</text>
+<text x="640" y="154" font-size="18" font-weight="bold">03  INTERPOLATE</text>
+<text x="640" y="187" font-size="16">IDW power 2; 12 neighbours</text><text x="640" y="215" font-size="16">100 m output cells</text>
+<text x="930" y="154" font-size="18" font-weight="bold">04  MASK + PRESENT</text>
+<text x="930" y="187" font-size="16">Restrict to supplied boundary</text><text x="930" y="215" font-size="16">Classified layout + PDF</text>
+</g>
+<g stroke="#38606a" stroke-width="2" fill="#38606a"><path d="M298 183H319m-7-5 7 5-7 5M588 183H609m-7-5 7 5-7 5M878 183H899m-7-5 7 5-7 5"/></g>
+<text x="40" y="287" font-family="Arial,sans-serif" font-size="14" fill="#38606a">Coursework process illustration. Interpolation estimates spatial variation; it does not establish pollution sources or predictive accuracy.</text>
+</svg>
